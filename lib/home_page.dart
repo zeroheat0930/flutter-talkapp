@@ -17,7 +17,8 @@ class _HomePageState extends State<HomePage> {
   TextEditingController _textEditingController = TextEditingController();
 
   List<String> _chats = [];
-  final PreferredSizeWidget apppbar = (Platform.isIOS ? CupertinoNavigationBar() : AppBar(title: Text("Chat App"),)) as PreferredSizeWidget;
+  final PreferredSizeWidget apppbar = (Platform.isIOS ? CupertinoNavigationBar(middle: Text("Chat App"),)
+      : AppBar(title: Text("Chat App"),)) as PreferredSizeWidget;
 
   @override
   Widget build(BuildContext context) {
