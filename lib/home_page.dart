@@ -13,12 +13,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  final PreferredSizeWidget apppbar = (Platform.isIOS ? CupertinoNavigationBar(middle: Text("Chat App"),)
+      : AppBar(title: Text("Chat App"),)) as PreferredSizeWidget;
   GlobalKey<AnimatedListState> _animListKey = GlobalKey<AnimatedListState>();
   TextEditingController _textEditingController = TextEditingController();
 
   List<String> _chats = [];
-  final PreferredSizeWidget apppbar = (Platform.isIOS ? CupertinoNavigationBar(middle: Text("Chat App"),)
-      : AppBar(title: Text("Chat App"),)) as PreferredSizeWidget;
+
 
   @override
   Widget build(BuildContext context) {

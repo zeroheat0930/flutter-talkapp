@@ -36,7 +36,7 @@ class ChatMessage extends StatelessWidget {
                           fontWeight: FontWeight.bold
                       ),
                     ),
-                    Text("message in here")
+                    Text(txt)
                   ],
                 ),
               )
